@@ -12,9 +12,9 @@ WORKDIR /app
 
 ENV PATH="/app/.local/bin/:${PATH}"
 
-RUN useradd -u 1001 -r -g 0 -d /app -s /sbin/nologin \
+RUN useradd -u 1019030000 -r -g 0 -d /app -s /sbin/nologin \
     -c "Default Application User" default && \
-    chown -R 1001:0 /app && \
+    chown -R 1019030000:0 /app && \
     chmod -R g+rw /app
 
 USER 1001
